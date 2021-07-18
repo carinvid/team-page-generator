@@ -1,0 +1,28 @@
+{
+  "name": "team-page-generator",
+  "version": "14.17.1",
+  "description": "",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "inquirer": "^8.1.2",
+    "jest": "^27.0.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carinvid/team-page-generator.git"
+  },
+  "author": "Carolina Reedy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carinvid/team-page-generator/issues"
+  },
+  "homepage": "https://github.com/carinvid/team-page-generator#readme"
+}
