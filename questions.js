@@ -40,7 +40,7 @@ const managerQuestions = [
     type: "input",
     message: "What is your manager's office number?",
     name: "mgrOffice",
-    default: "423",
+    default: "801",
     validate: function (answer) {
       if (answer.length < 1) {
         return console.log("A valid office number is required.");
@@ -72,7 +72,7 @@ const engineerQuestions = [
     type: "input",
     message: "What is your software engineer's name?",
     name: "engName",
-    default: "Connie Tran",
+    default: "John Smith",
     validate: function (answer) {
       if (answer.length < 1) {
         return console.log("A valid name is required.");
@@ -84,7 +84,7 @@ const engineerQuestions = [
     type: "input",
     message: "What is your engineer's employee ID?",
     name: "engId",
-    default: "296",
+    default: "102",
     validate: function (answer) {
       if (answer <= 0) {
         return console.log("A valid employee ID is required.");
@@ -96,7 +96,7 @@ const engineerQuestions = [
     type: "input",
     message: "What is your engineer's email address?",
     name: "engEmail",
-    default: "connietrandev@gmail.com",
+    default: "test@test.com",
     validate: function (answer) {
       if (answer.length < 1) {
         return console.log("A valid email address is required.");
@@ -108,10 +108,22 @@ const engineerQuestions = [
     type: "input",
     message: "What is your engineer's GitHub? (No @ needed)",
     name: "engGithub",
-    default: "connietran-dev",
+    default: "default",
     validate: function (answer) {
       if (answer.length < 1) {
         return console.log("A valid GitHub is required.");
+      }
+      return true;
+    },
+  },
+  {
+    type: "input",
+    message: "What is your employee's office number?",
+    name: "empOffice",
+    default: "801",
+    validate: function (answer) {
+      if (answer.length < 1) {
+        return console.log("A valid office number is required.");
       }
       return true;
     },
@@ -123,7 +135,7 @@ const internQuestions = [
     type: "input",
     message: "What is your intern's name?",
     name: "internName",
-    default: "Ryan Howard",
+    default: "Paul Smith",
     validate: function (answer) {
       if (answer.length < 1) {
         return console.log("A valid name is required.");
@@ -135,7 +147,7 @@ const internQuestions = [
     type: "input",
     message: "What is your intern's employee ID?",
     name: "internId",
-    default: "685",
+    default: "103",
     validate: function (answer) {
       if (answer <= 0) {
         return console.log("A valid employee ID is required.");
@@ -147,7 +159,7 @@ const internQuestions = [
     type: "input",
     message: "What is your intern's email address?",
     name: "internEmail",
-    default: "rhoward@theoffice.com",
+    default: "test2@test.com",
     validate: function (answer) {
       if (answer.length < 1) {
         return console.log("A valid email address is required.");
@@ -159,10 +171,22 @@ const internQuestions = [
     type: "input",
     message: "What is the name of your intern's university?",
     name: "internSchool",
-    default: "Georgia Institute of Technology",
+    default: "University of Utah",
     validate: function (answer) {
       if (answer.length < 1) {
         return console.log("A valid school is required.");
+      }
+      return true;
+    },
+  },
+  {
+    type: "input",
+    message: "What is your intern's office number?",
+    name: "internOffice",
+    default: "801",
+    validate: function (answer) {
+      if (answer.length < 1) {
+        return console.log("A valid office number is required.");
       }
       return true;
     },
