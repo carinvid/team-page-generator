@@ -11,6 +11,8 @@ OOP, Node, & ES6
 
 This Node CLI will prompt you to generate a webpage for your software engineering team.
 
+https://user-images.githubusercontent.com/17866063/126260138-8478c824-169f-4a51-a63f-f3c2ac9b686f.mp4
+
 ***Roster output
 
 When you have completed building the team, the application then generates an index.html page in the output/ directory, that displays a nicely formatted team roster based on the information you provided. 
