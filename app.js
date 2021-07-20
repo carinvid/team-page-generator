@@ -80,7 +80,7 @@ async function createEmployee() {
         internResponses.internId,
         internResponses.internEmail,
         internResponses.internSchool,
-        internResponses.interOffice
+        internResponses.internOffice
       );
       employees.push(newIntern);
       console.log("Thanks! We've added a new intern to the team: ", newIntern);
@@ -111,12 +111,12 @@ async function init() {
         The render function will generate and return a block of HTML including templated divs for each employee. */
     let renderedHTML = render(employees);
 
-    /* Take HTML returned from render() function and write to file named team.html in the docs folder */
-    // I have named it docs instead of output so that the page appears on GitHub pages
-    fs.writeFileSync("./docs/index.html", renderedHTML);
+    /* Take HTML returned from render() function and write to file named team.html in the output folder */
+
+    fs.writeFileSync("./output/index.html", renderedHTML);
 
     console.log(
-      "Success! Your HTML page has been generated in the docs folder."
+      "Success! Your HTML page has been generated in the 'ouput' folder."
     );
   } catch (error) {
     console.log(error);
