@@ -104,18 +104,18 @@ const engineerQuestions = [
       return true;
     },
   },
-  {
-    type: "input",
-    message: "What is your engineer's GitHub? (No @ needed)",
-    name: "engGithub",
-    default: "default",
-    validate: function (answer) {
-      if (answer.length < 1) {
-        return console.log("A valid GitHub is required.");
-      }
-      return true;
-    },
-  },
+  // {
+  //   type: "input",
+  //   message: "What is your engineer's GitHub? (No @ needed)",
+  //   name: "engGithub",
+  //   default: "default",
+  //   validate: function (answer) {
+  //     if (answer.length < 1) {
+  //       return console.log("A valid GitHub is required.");
+  //     }
+  //     return true;
+  //   },
+  // },
   {
     type: "input",
     message: "What is your employee's office number?",
