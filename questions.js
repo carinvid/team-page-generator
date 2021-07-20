@@ -2,7 +2,7 @@ const managerQuestions = [
   {
     type: "input",
     message:
-      "This application will generate an HTML page for your software engineering team. An engineering team consists of a manager and any number of engineers & interns. First, what is your manager's name?",
+      "This application will generate an HTML page for your software engineering team. First, what is your manager's name?",
     name: "mgrName",
     default: "Mary Smith",
     validate: function (answer) {
@@ -94,7 +94,7 @@ const engineerQuestions = [
   },
   {
     type: "input",
-    message: "What is your engineer's email address?",
+    message: "What is your email address?",
     name: "engEmail",
     default: "test@test.com",
     validate: function (answer) {
@@ -118,8 +118,8 @@ const engineerQuestions = [
   // },
   {
     type: "input",
-    message: "What is your employee's office number?",
-    name: "empOffice",
+    message: "What is your engineer's office number?",
+    name: "engOffice",
     default: "801",
     validate: function (answer) {
       if (answer.length < 1) {

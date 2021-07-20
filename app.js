@@ -64,7 +64,7 @@ async function createEmployee() {
         engResponses.engName,
         engResponses.engId,
         engResponses.engEmail,
-        engResponses.engGithub
+        engResponses.engOffice
       );
       employees.push(newEngineer);
       console.log(
@@ -79,7 +79,8 @@ async function createEmployee() {
         internResponses.internName,
         internResponses.internId,
         internResponses.internEmail,
-        internResponses.internSchool
+        internResponses.internSchool,
+        internResponses.interOffice
       );
       employees.push(newIntern);
       console.log("Thanks! We've added a new intern to the team: ", newIntern);
